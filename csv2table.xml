@@ -11,7 +11,7 @@
 	<description><![CDATA[
 	<p>CSV 2 table plugin - autoreplaces any csv text in your article with usual HTML table.
 	<p>For example insert into content <i>{csv}rows;and;values;here<br />and;second;row;neccessary{/csv}.</i> and it will replace to normal HTML table with sorting by column ablility.</p>
-	<p>For additional styling use tables id (it generates automatically or .displaycsv_sortable or .displaycsv_sortable_not classes.</p>
+	<p>For additional styling use tables id (it generates automatically) or .displaycsv_sortable or .displaycsv_sortable_not classes.</p>
 	<p>You can change default separator in plugin settings. BY DEFAULT SEPARATOR IS ";". If you upgrade from previous version - reapply the settings.</p>
 	]]></description>
 	<files>
