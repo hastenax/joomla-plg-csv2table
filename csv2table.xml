@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content">
+	<name>Content - CSV 2 Table</name>
+	<author>Vladislav Galyanin</author>
+	<creationDate>March 2011</creationDate>
+	<copyright>>Copyright 2006-2012 Union D</copyright>
+	<license>GNU/GPL: http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>v.galyanin@gmail.com</authorEmail>
+	<authorUrl>http://union-d.ru/</authorUrl>
+	<version>1.2</version>
+	<description><![CDATA[
+	<p>CSV 2 table plugin - autoreplaces any csv text in your article with usual HTML table.
+	<p>For example insert into content <i>{csv}rows;and;values;here<br />and;second;row;neccessary{/csv}.</i> and it will replace to normal HTML table with sorting by column ablility.</p>
+	<p>For additional styling use tables id (it generates automatically or .displaycsv_sortable or .displaycsv_sortable_not classes.</p>
+	<p>You can change default separator in plugin settings. BY DEFAULT SEPARATOR IS ";". If you upgrade from previous version - reapply the settings.</p>
+	]]></description>
+	<files>
+		<filename plugin="csv2table">csv2table.php</filename>
+		<filename>parsecsv.lib.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>sorttable.js</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB/en-GB.plg_content_csv2table.ini</language>
+	</languages>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="sortable" type="list" label="SORTABLE" default="1">
+					<option value="0">NO</option>
+					<option value="1">YES</option>
+				</field>
+				<field name="delimiter" type="text" label="DELIMITER" default=";"/>
+				<field name="copyrights" type="list" default="YES" label="COPYRIGHTS" description="ENABLE_PLUGIN_COPYRIGHTS">
+					<option value="no">NO</option>
+					<option value="YES">YES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
